@@ -1,0 +1,31 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  uid: MyString
+  userinfo: MyText
+  for_self: false
+  for_kids: false
+  for_family: false
+  for_friends: false
+  for_team: false
+  for_others: false
+  ebook: false
+  print_book: false
+  stay_updated: false
+  price_range: MyString
+  metadata: MyText
+
+two:
+  uid: MyString
+  userinfo: MyText
+  for_self: false
+  for_kids: false
+  for_family: false
+  for_friends: false
+  for_team: false
+  for_others: false
+  ebook: false
+  print_book: false
+  stay_updated: false
+  price_range: MyString
+  metadata: MyText
