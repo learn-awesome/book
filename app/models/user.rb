@@ -16,10 +16,6 @@ class User < ApplicationRecord
   	self.auth0info["info"]["image"]
   end
 
-  def headline
-  	""
-  end
-
   def save_image
   	img = HTTParty.get(self.picture).body
   	self.image = Base64.encode64(img)
@@ -28,5 +24,7 @@ class User < ApplicationRecord
 
   def self.for_homepage
   	User.where("rank > 0").order("rank DESC").all
+
+    # [User.first, User.first, User.first, User.first, User.first]
   end
 end
