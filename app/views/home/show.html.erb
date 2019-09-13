@@ -6,11 +6,7 @@
       
     <div class="pl-4 flex items-center">
       <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="/"> 
-        <!--Icon from: http://www.potlabicons.com/ -->
-        <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-        <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" />
-        <path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/>
-        </svg> LearnAwesome
+        📖 Learn Awesome
       </a>
     </div>
 
@@ -24,7 +20,7 @@
       <ul class="list-reset lg:flex justify-end flex-1 items-center">
       </ul>
 
-      <%= button_to 'Sign-in with LinkedIn', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75" %>
+      <%= button_to 'Join the waitlist with LinkedIn', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75" %>
     </div>
   </div>
   
@@ -40,11 +36,9 @@
   <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
     <!--Left Col-->
     <div class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left">
-      <p class="uppercase tracking-loose w-full">What business are you?</p>
-      <h1 class="my-4 text-5xl font-bold leading-tight">Everything about learning</h1>
-      <p class="leading-normal text-2xl mb-8">Best ideas about learning compiled in a single book.</p>
-    
-      <%= button_to 'Login', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" %>
+      <!-- <p class="uppercase tracking-loose w-full">What business are you?</p> -->
+      <h1 class="my-4 text-5xl font-bold leading-tight">Everything about learning.</h1>
+      <p class="leading-normal text-2xl mb-8">We're compiling the best ideas about learning in a single book.</p>
       
     </div>
     <!--Right Col-->
@@ -79,6 +73,10 @@
     <h1 class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">The Project</h1>
     <div class="w-full mb-4"> 
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
+    </div>
+
+    <div class="flex flex-wrap">
+      <p class="text-gray-600 text-xl">Quickly becoming an expert in a new topic is still a big challenge. People want to ramp up to proficiency on new topics, but are missing a compelling way to do that quickly. There are a lot of open resources available on the web, but finding, qualifying, and navigating them–let alone combining them into a self directed system–is a challenge.</p>
     </div>
   
     <div class="flex flex-wrap">
@@ -305,9 +303,9 @@
     <div class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
   </div>
 
-  <h3 class="my-4 text-3xl leading-tight">This book can only happen if we can demonstrate to the publishers that there's sufficient interest among readers. We need your support.</h3>  
+  <h3 class="my-4 text-3xl leading-tight">This book can only happen if we can demonstrate to the publishers that there's sufficient interest among readers. We need you to express support.</h3>  
 
-  <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Sign-in with LinkedIn</button>
+  <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join the waitlist with LinkedIn</button>
     
 </section>
 
@@ -321,24 +319,19 @@
       <div class="flex-1 mb-6">
       
         <a class="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-2xl"  href="#"> 
-          <!--Icon from: http://www.potlabicons.com/ -->
-          <svg class="h-8 fill-current inline" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512.005 512.005">
-          <rect fill="#2a2a31" x="16.539" y="425.626" width="479.767" height="50.502" transform="matrix(1,0,0,1,0,0)" fill="rgb(0,0,0)" />
-          <path class="plane-take-off" d=" M 510.7 189.151 C 505.271 168.95 484.565 156.956 464.365 162.385 L 330.156 198.367 L 155.924 35.878 L 107.19 49.008 L 211.729 230.183 L 86.232 263.767 L 36.614 224.754 L 0 234.603 L 45.957 314.27 L 65.274 347.727 L 105.802 336.869 L 240.011 300.886 L 349.726 271.469 L 483.935 235.486 C 504.134 230.057 516.129 209.352 510.7 189.151 Z "/>
-          </svg> LearnAwesome
+          📖 Learn Awesome
           
         </a>
       </div>
     
     
             <div class="flex-1">
-                <p class="uppercase text-gray-500 md:mb-6">Links</p>
-                <ul class="list-reset mb-6">
-                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <ul class="flex">
+                    <li class="mr-2">
                         <a href="https://twitter.com/learn_awesome" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Twitter</a>
                     </li>
-                    <li class="mt-2 inline-block mr-2 md:block md:mr-0">
-                        <a href="https://medium.com/learn_awesome" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Blog</a>
+                    <li class="mr-2">
+                        <a href="https://medium.com/learn-awesome" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Blog</a>
                     </li>
                 </ul>
             </div>
@@ -365,7 +358,7 @@
 
   document.addEventListener('scroll', function() {
 
-  /*Apply classes for slide in bar*/
+  // Apply classes for slide in bar
   scrollpos = window.scrollY;
 
     if(scrollpos > 10){
