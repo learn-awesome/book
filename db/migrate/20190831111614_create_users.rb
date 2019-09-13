@@ -19,6 +19,7 @@ class CreateUsers < ActiveRecord::Migration[6.0]
       t.string :price_range
       t.text :metadata
       t.integer :rank, default: 1
+      t.text :message
 
       t.timestamps
     end

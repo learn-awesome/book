@@ -33,6 +33,7 @@ ActiveRecord::Schema.define(version: 2019_08_31_111614) do
     t.string "price_range"
     t.text "metadata"
     t.integer "rank", default: 1
+    t.text "message"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

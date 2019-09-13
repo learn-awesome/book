@@ -1,5 +1,32 @@
-<h1>Hi, <%= current_user.auth0info["info"]["name"] %>!</h1>
+  <div class="flex items-center justify-center h-screen">
+    
+	<div class="bg-orange-800 text-white rounded-lg border shadow-lg p-10">
+		<% if flash[:notice].present? %>
+		  <div class="p-1 bg-yellow-400 text-black rounded shadow-xl mb-2"><%= flash[:notice] %></div>
+		<% end %>
+
+		<h1 class="mb-2">Hi, <%= current_user.auth0info["info"]["name"] %>!</h1><br/>
+		
+		<p>Thank you so much for joining the waitlist. You're our <%= User.count.ordinalize %> supporter! 🤗</p>
+
+		<% if current_user.message.blank? or params[:show].to_s.to_sym == :true %>
+		<p>Do you have any message for us?</p>
+		
+		<%= form_tag '/dashboard/message', class: "mt-2" do -%>
+			<textarea style="width: 100%" class="mb-2 text-black p-1" name="message"><%= current_user.message %></textarea>
+			<div>
+				<input type="submit" value="Submit" class="bg-yellow-900 hover:bg-gray-900 text-white font-bold py-2 px-4 rounded"/>
+			</div>
+		<% end %>
+		<% end %>
+
+		<div class="mt-4 text-right"><a href="/logout"><u>Logout</u></a></div>
+	</div>
+	
+  </div>
 
 
 
-<a href="/logout">Logout</a>
+
+
+
