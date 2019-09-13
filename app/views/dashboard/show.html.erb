@@ -7,9 +7,9 @@
 
 		<h1 class="mb-2">Hi, <%= current_user.auth0info["info"]["name"] %>!</h1><br/>
 		
-		<p>Thank you so much for joining the waitlist. You're our <%= User.count.ordinalize %> supporter! 🤗</p>
+		<p>Thank you so much for joining the waitlist. You're our <%= User.where("rank > 0").count.ordinalize %> supporter! 🤗</p>
 
-		<% if current_user.message.blank? or params[:show].to_s.to_sym == :true %>
+		<% if current_user.message.blank? or params[:showmsg].to_s.to_sym == :true %>
 		<p>Do you have any message for us?</p>
 		
 		<%= form_tag '/dashboard/message', class: "mt-2" do -%>
