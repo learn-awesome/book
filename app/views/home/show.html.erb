@@ -20,7 +20,7 @@
       <ul class="list-reset lg:flex justify-end flex-1 items-center">
       </ul>
 
-      <%= button_to 'Join the waitlist with LinkedIn', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75" %>
+      <%= button_to 'Join the waitlist with LinkedIn', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 cursor-pointer" %>
     </div>
   </div>
   
@@ -75,8 +75,8 @@
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
 
-    <div class="flex flex-wrap">
-      <p class="text-gray-600 text-xl">Quickly becoming an expert in a new topic is still a big challenge. People want to ramp up to proficiency on new topics, but are missing a compelling way to do that quickly. There are a lot of open resources available on the web, but finding, qualifying, and navigating them–let alone combining them into a self directed system–is a challenge.</p>
+    <div class="flex flex-wrap mb-4 mt-4">
+      <p class="text-gray-600 text-xl"><a href="https://medium.com/p/8bc360d95047" class="underline text-purple" target="_blank">The art of learning effectively is the most important skill one can acquire</a>. </p>
     </div>
   
     <div class="flex flex-wrap">
@@ -305,8 +305,7 @@
 
   <h3 class="my-4 text-3xl leading-tight">This book can only happen if we can demonstrate to the publishers that there's sufficient interest among readers. We need you to express support.</h3>  
 
-  <button class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Join the waitlist with LinkedIn</button>
-    
+  <%= button_to 'Join the waitlist with LinkedIn', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow-lg cursor-pointer" %>
 </section>
 
 
