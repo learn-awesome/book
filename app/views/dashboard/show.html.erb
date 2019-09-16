@@ -7,7 +7,7 @@
 
 		<h1 class="mb-2">Hi, <%= current_user.auth0info["info"]["name"] %>!</h1><br/>
 		
-		<p>Thank you so much for joining the waitlist. You're our <%= User.where("rank > 0").count.ordinalize %> supporter! 🤗</p>
+		<p>Thank you so much for joining the waitlist. You're our <%= User.where("rank > 0").count.ordinalize %> supporter! 🤗 You can join our <a href="https://gitter.im/learn-awesome/community" target="_blank">learning community</a>.</p>
 
 		<% if current_user.message.blank? or params[:showmsg].to_s.to_sym == :true %>
 		<p>Do you have any message for us?</p>
