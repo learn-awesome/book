@@ -39,7 +39,8 @@
       <!-- <p class="uppercase tracking-loose w-full">What business are you?</p> -->
       <h1 class="my-4 text-5xl font-bold leading-tight">The ultimate book on learning.</h1>
       <p class="leading-normal text-2xl mb-8">We're compiling the best ideas about learning in a single book after testing them on real-world learning projects.</p>
-      
+
+      <%= button_to "Join the waitlist with LinkedIn with #{User.for_homepage.count} others", 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow-lg cursor-pointer" %>      
     </div>
     <!--Right Col-->
     <div class="w-full md:w-3/5 py-6 text-center">
@@ -184,7 +185,7 @@
       
       <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
         <div class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
-          <div class="p-8 text-3xl font-bold text-center">Nilesh Trivedi</div>
+          <div class="p-8 text-3xl font-bold text-center">Nilesh<br/>Trivedi</div>
           <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
@@ -203,10 +204,10 @@
       
       <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-lg bg-white mt-4 ">
         <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-          <div class="w-full p-8 text-3xl font-bold text-center border-b-4">Ujjwal Gupta</div>
+          <div class="w-full p-8 text-3xl font-bold text-center border-b-4">Ujjwal<br/>Gupta</div>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-          <p class="text-xl">Ujjwal has been working professionally for 2 years as a datascientist and full stack developer. <br/> <br/> Over the next 3 months, he plans to learn probability and financial modelling.</p>
+          <p class="text-xl">Ujjwal has been working as a datascientist and full stack developer. <br/> <br/> Over the next 3 months, he plans to learn probability and financial modelling.</p>
           <br/>
 
           <p>
@@ -221,19 +222,28 @@
       
       <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
         <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-          <div class="p-8 text-3xl font-bold text-center border-b-4">Jigyasu Arya</div>
+          <div class="p-8 text-3xl font-bold text-center border-b-4">Jigyasu<br/>Arya</div>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-          <p>Lorem ipsum</p>
+          <p class="text-xl">Jigyasu is a college dropout and a self-taught frontend developer. <br/> <br/> He plans to unlearn and relearn both English grammar and Javascript in depth.</p>
         </div>
       </div>
 
       <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
         <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
-          <div class="p-8 text-3xl font-bold text-center border-b-4">Devansh Gulhane</div>
+          <div class="p-8 text-3xl font-bold text-center border-b-4">Devansh<br/>Gulhane</div>
         </div>
         <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
-          <p>Lorem ipsum</p>
+          <p class="text-xl"></p>
+        </div>
+      </div>
+
+      <div class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4">
+        <div class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow">
+          <div class="p-8 text-3xl font-bold text-center border-b-4">Priyank<br/>Agarwal</div>
+        </div>
+        <div class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6">
+          <p class="text-xl">Priyank is the cofounder of cutshort.io. <br/> <br/> Over the next 3 months, he will learn to build habits to get physically fit and reduce social media addiction.</p>
         </div>
       </div>
 
@@ -256,7 +266,7 @@
       <div class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
     </div>
 
-<% User.for_homepage.each do |user| %>  
+<% User.for_homepage.all.each do |user| %>  
 <div class="bg-white mx-auto max-w-sm shadow-lg rounded-lg overflow-hidden mb-4">
   <div class="sm:flex sm:items-center px-6 py-4">
     <img class="block h-16 sm:h-24 rounded-full mx-auto mb-4 sm:mb-0 sm:mr-4 sm:ml-0" src="data:image/png;base64,<%= user.image %>" alt="">
@@ -302,7 +312,7 @@
 
   <h3 class="my-4 text-3xl leading-tight">This book can only happen if we can demonstrate to the publishers that there's sufficient interest among readers. We need you to express your support.</h3>  
 
-  <%= button_to 'Join the waitlist with LinkedIn', 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow-lg cursor-pointer" %>
+  <%= button_to "Join the waitlist with LinkedIn with #{User.for_homepage.count} others", 'auth/auth0', method: :post, class: "mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow-lg cursor-pointer" %>
 </section>
 
 
@@ -331,6 +341,10 @@
                     </li>
                     <li class="mr-4">
                         <a href="https://gitter.im/learn-awesome/community" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Community</a>
+                    </li>
+
+                    <li class="mr-4">
+                        <a href="https://learnawesome.org" target="_blank" class="no-underline hover:underline text-gray-800 hover:text-orange-500">Learning Map</a>
                     </li>
                 </ul>
             </div>

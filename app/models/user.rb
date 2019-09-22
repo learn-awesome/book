@@ -23,7 +23,7 @@ class User < ApplicationRecord
   end
 
   def self.for_homepage
-  	User.where("rank > 0").order("rank DESC").all
+  	User.where("rank > 0").order("rank DESC")
 
     # [User.first, User.first, User.first, User.first, User.first]
   end
